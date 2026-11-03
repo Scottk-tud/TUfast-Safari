@@ -139,8 +139,9 @@ export async function owaIsOpened() {
   } else return false
 }
 
+// Querying by URL keeps Safari from asking for access to every open site
 async function getAllChromeTabs() {
-  return await chrome.tabs.query({})
+  return await chrome.tabs.query({ url: 'https://msx.tu-dresden.de/*' })
 }
 
 // start OWA fetch funtion based on interval
