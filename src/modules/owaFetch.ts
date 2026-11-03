@@ -1,3 +1,4 @@
+import { isSafari } from './firefoxCheck'
 import { getUserData } from './credentials'
 import { t } from '../i18n'
 
@@ -130,6 +131,11 @@ export function countUnreadMsg(json: any) {
 
 // checks, if user currently uses owa in browser
 export async function owaIsOpened() {
+  if (isSafari()) {
+    const { owaTabSeenAt } = await chrome.storage.local.get(['owaTabSeenAt'])
+    return typeof owaTabSeenAt === 'number' && Date.now() - owaTabSeenAt < 2 * 60_000
+  }
+
   const uri = 'msx.tu-dresden.de'
   const tabs = await getAllChromeTabs()
   // Find element with msx in uri, -1 if none found
@@ -139,9 +145,8 @@ export async function owaIsOpened() {
   } else return false
 }
 
-// Querying by URL keeps Safari from asking for access to every open site
 async function getAllChromeTabs() {
-  return await chrome.tabs.query({ url: 'https://msx.tu-dresden.de/*' })
+  return await chrome.tabs.query({})
 }
 
 // start OWA fetch funtion based on interval

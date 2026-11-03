@@ -22,3 +22,7 @@ const checkInterval = setInterval(() => {
     chrome.runtime.sendMessage({ cmd: 'read_mail_owa', nrOfUnreadMail: count })
   }).observe(unreadCountNode, { subtree: true, characterData: true })
 }, 100)
+
+// Lets the background know OWA is open without querying tabs, which makes Safari ask for site access
+chrome.storage.local.set({ owaTabSeenAt: Date.now() })
+setInterval(() => chrome.storage.local.set({ owaTabSeenAt: Date.now() }), 60_000)
