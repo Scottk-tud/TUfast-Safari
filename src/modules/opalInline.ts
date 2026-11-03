@@ -5,7 +5,7 @@
 // Every file that can be opened in the browser will be opened in the browser.
 // Firefox still need to use webRequestBlocking, so we need to check if we are in Firefox
 
-import { isFirefox, getBrowserNetRequestPermissions as getBrowserPermissions } from './firefoxCheck'
+import { isFirefox, isSafari, getBrowserNetRequestPermissions as getBrowserPermissions } from './firefoxCheck'
 import { t } from '../i18n'
 
 // The rules that make the magic happen
@@ -54,6 +54,9 @@ export async function permissionsGrantedWebRequest(): Promise<boolean> {
 
 // Enable the module
 export async function enableOpalInline(): Promise<boolean> {
+  // Safari crashes while loading dynamic declarativeNetRequest rules
+  if (isSafari()) return false
+
   // Chrome typings are deprecated, we cast so no error is shown
   // As declarativeNetRequest is not supported as optional permission in Manifest V3, we don't need to ask for it
   const granted = await (chrome.permissions as any).request({ permissions: getBrowserPermissions() })
@@ -86,6 +89,11 @@ export async function disableOpalInline() {
 export async function enableOpalHeaderListener() {
   const granted = await (chrome.permissions as any).contains({ permissions: getBrowserPermissions() })
   if (!granted) return
+
+  if (isSafari()) {
+    await disableOpalInline()
+    return
+  }
 
   if (isFirefox()) {
     chrome.webRequest.onHeadersReceived.addListener(
