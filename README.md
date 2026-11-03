@@ -28,4 +28,4 @@ Open the app once, then turn on TUfast in Safari → Settings → Extensions. Wi
 
 ## License
 
-MPL 2.0, like upstream. See [LICENSE](LICENSE).
+GPL-3.0, like upstream. See [LICENSE](LICENSE).
