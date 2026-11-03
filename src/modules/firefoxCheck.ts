@@ -6,6 +6,10 @@ export function isFirefox(): boolean {
   )
 }
 
+export function isSafari(): boolean {
+  return typeof navigator !== 'undefined' && /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+}
+
 export function getBrowserNetRequestPermissions(): string[] {
   return isFirefox() ? ['webRequest', 'webRequestBlocking'] : ['declarativeNetRequestWithHostAccess']
 }

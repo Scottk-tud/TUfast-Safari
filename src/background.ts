@@ -3,7 +3,7 @@ import * as credentials from './modules/credentials'
 import * as otp from './modules/otp'
 import * as owaFetch from './modules/owaFetch'
 import * as opalInline from './modules/opalInline'
-import { isFirefox } from './modules/firefoxCheck'
+import { isFirefox, isSafari } from './modules/firefoxCheck'
 import rockets from './freshContent/rockets.json'
 import studies from './freshContent/studies.json'
 import { initLocale, t } from './i18n'
@@ -507,7 +507,9 @@ chrome.runtime.onMessage.addListener((request, _sender, sendResponse) => {
       openSharePage()
       break
     case 'open_shortcut_settings': {
-      if (isFirefox()) {
+      if (isSafari()) {
+        // Safari has no shortcut settings page for extensions
+      } else if (isFirefox()) {
         chrome.tabs.create({ url: 'https://support.mozilla.org/de/kb/tastenkombinationen-fur-erweiterungen-verwalten' })
       } else {
         // for chrome and everything else

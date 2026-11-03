@@ -15,6 +15,7 @@
     "build": "vite build",
     "useChrome": "cp src/manifest.chrome.json src/manifest.json",
     "useFF": "cp src/manifest.firefox.json src/manifest.json",
+    "useSafari": "cp src/manifest.safari.json src/manifest.json",
     "checkVersionBump": "node scripts/check-version-bump.mjs",
     "syncVersion": "node scripts/sync-version.mjs",
     "verify:locales": "node scripts/verify-locales.mjs",

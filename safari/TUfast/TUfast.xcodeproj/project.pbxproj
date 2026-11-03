@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2211940308DF4F500F7822F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D221193F308DF4F500F7822F /* AppDelegate.swift */; };
+		D2211944308DF4F500F7822F /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = D2211942308DF4F500F7822F /* Main.html */; };
+		D2211946308DF4F500F7822F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D2211945308DF4F500F7822F /* Icon.png */; };
+		D2211948308DF4F500F7822F /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = D2211947308DF4F500F7822F /* Style.css */; };
+		D221194A308DF4F500F7822F /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = D2211949308DF4F500F7822F /* Script.js */; };
+		D221194C308DF4F500F7822F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D221194B308DF4F500F7822F /* ViewController.swift */; };
+		D221194F308DF4F500F7822F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D221194D308DF4F500F7822F /* Main.storyboard */; };
+		D2211951308DF4F700F7822F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2211950308DF4F700F7822F /* Assets.xcassets */; };
+		D2211958308DF4F700F7822F /* TUfast Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D2211957308DF4F700F7822F /* TUfast Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D221195D308DF4F700F7822F /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D221195C308DF4F700F7822F /* SafariWebExtensionHandler.swift */; };
+		D2211978308DF4F700F7822F /* manifest.safari.json in Resources */ = {isa = PBXBuildFile; fileRef = D2211969308DF4F700F7822F /* manifest.safari.json */; };
+		D2211979308DF4F700F7822F /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = D221196A308DF4F700F7822F /* background.js */; };
+		D221197A308DF4F700F7822F /* manifest.firefox.json in Resources */ = {isa = PBXBuildFile; fileRef = D221196B308DF4F700F7822F /* manifest.firefox.json */; };
+		D221197B308DF4F700F7822F /* manifest.chrome.json in Resources */ = {isa = PBXBuildFile; fileRef = D221196C308DF4F700F7822F /* manifest.chrome.json */; };
+		D221197C308DF4F700F7822F /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = D221196D308DF4F700F7822F /* main.css */; };
+		D221197D308DF4F700F7822F /* styles in Resources */ = {isa = PBXBuildFile; fileRef = D221196E308DF4F700F7822F /* styles */; };
+		D221197E308DF4F700F7822F /* contentScripts in Resources */ = {isa = PBXBuildFile; fileRef = D221196F308DF4F700F7822F /* contentScripts */; };
+		D221197F308DF4F700F7822F /* vite in Resources */ = {isa = PBXBuildFile; fileRef = D2211970308DF4F700F7822F /* vite */; };
+		D2211980308DF4F700F7822F /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = D2211971308DF4F700F7822F /* manifest.json */; };
+		D2211981308DF4F700F7822F /* freshContent in Resources */ = {isa = PBXBuildFile; fileRef = D2211972308DF4F700F7822F /* freshContent */; };
+		D2211982308DF4F700F7822F /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = D2211973308DF4F700F7822F /* background.html */; };
+		D2211983308DF4F700F7822F /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = D2211974308DF4F700F7822F /* _locales */; };
+		D2211984308DF4F700F7822F /* i18n in Resources */ = {isa = PBXBuildFile; fileRef = D2211975308DF4F700F7822F /* i18n */; };
+		D2211985308DF4F700F7822F /* modules in Resources */ = {isa = PBXBuildFile; fileRef = D2211976308DF4F700F7822F /* modules */; };
+		D2211986308DF4F700F7822F /* assets in Resources */ = {isa = PBXBuildFile; fileRef = D2211977308DF4F700F7822F /* assets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2211959308DF4F700F7822F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2211934308DF4F500F7822F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2211956308DF4F700F7822F;
+			remoteInfo = "TUfast Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2211964308DF4F700F7822F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D2211958308DF4F700F7822F /* TUfast Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D221193C308DF4F500F7822F /* TUfast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TUfast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D221193F308DF4F500F7822F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2211943308DF4F500F7822F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		D2211945308DF4F500F7822F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D2211947308DF4F500F7822F /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		D2211949308DF4F500F7822F /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		D221194B308DF4F500F7822F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D221194E308DF4F500F7822F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2211950308DF4F700F7822F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2211952308DF4F700F7822F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2211957308DF4F700F7822F /* TUfast Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TUfast Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D221195C308DF4F700F7822F /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		D221195E308DF4F700F7822F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2211969308DF4F700F7822F /* manifest.safari.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.safari.json; path = ../../../build/manifest.safari.json; sourceTree = "<group>"; };
+		D221196A308DF4F700F7822F /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../../build/background.js; sourceTree = "<group>"; };
+		D221196B308DF4F700F7822F /* manifest.firefox.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.firefox.json; path = ../../../build/manifest.firefox.json; sourceTree = "<group>"; };
+		D221196C308DF4F700F7822F /* manifest.chrome.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.chrome.json; path = ../../../build/manifest.chrome.json; sourceTree = "<group>"; };
+		D221196D308DF4F700F7822F /* main.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = main.css; path = ../../../build/main.css; sourceTree = "<group>"; };
+		D221196E308DF4F700F7822F /* styles */ = {isa = PBXFileReference; lastKnownFileType = folder; name = styles; path = ../../../build/styles; sourceTree = "<group>"; };
+		D221196F308DF4F700F7822F /* contentScripts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = contentScripts; path = ../../../build/contentScripts; sourceTree = "<group>"; };
+		D2211970308DF4F700F7822F /* vite */ = {isa = PBXFileReference; lastKnownFileType = folder; name = vite; path = ../../../build/vite; sourceTree = "<group>"; };
+		D2211971308DF4F700F7822F /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../build/manifest.json; sourceTree = "<group>"; };
+		D2211972308DF4F700F7822F /* freshContent */ = {isa = PBXFileReference; lastKnownFileType = folder; name = freshContent; path = ../../../build/freshContent; sourceTree = "<group>"; };
+		D2211973308DF4F700F7822F /* background.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = background.html; path = ../../../build/background.html; sourceTree = "<group>"; };
+		D2211974308DF4F700F7822F /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = ../../../build/_locales; sourceTree = "<group>"; };
+		D2211975308DF4F700F7822F /* i18n */ = {isa = PBXFileReference; lastKnownFileType = folder; name = i18n; path = ../../../build/i18n; sourceTree = "<group>"; };
+		D2211976308DF4F700F7822F /* modules */ = {isa = PBXFileReference; lastKnownFileType = folder; name = modules; path = ../../../build/modules; sourceTree = "<group>"; };
+		D2211977308DF4F700F7822F /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../../build/assets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2211939308DF4F500F7822F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2211954308DF4F700F7822F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2211933308DF4F500F7822F = {
+			isa = PBXGroup;
+			children = (
+				D221193E308DF4F500F7822F /* TUfast */,
+				D221195B308DF4F700F7822F /* TUfast Extension */,
+				D221193D308DF4F500F7822F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D221193D308DF4F500F7822F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D221193C308DF4F500F7822F /* TUfast.app */,
+				D2211957308DF4F700F7822F /* TUfast Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D221193E308DF4F500F7822F /* TUfast */ = {
+			isa = PBXGroup;
+			children = (
+				D221193F308DF4F500F7822F /* AppDelegate.swift */,
+				D221194B308DF4F500F7822F /* ViewController.swift */,
+				D221194D308DF4F500F7822F /* Main.storyboard */,
+				D2211950308DF4F700F7822F /* Assets.xcassets */,
+				D2211952308DF4F700F7822F /* Info.plist */,
+				D2211941308DF4F500F7822F /* Resources */,
+			);
+			path = TUfast;
+			sourceTree = "<group>";
+		};
+		D2211941308DF4F500F7822F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2211942308DF4F500F7822F /* Main.html */,
+				D2211945308DF4F500F7822F /* Icon.png */,
+				D2211947308DF4F500F7822F /* Style.css */,
+				D2211949308DF4F500F7822F /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D221195B308DF4F700F7822F /* TUfast Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D2211968308DF4F700F7822F /* Resources */,
+				D221195C308DF4F700F7822F /* SafariWebExtensionHandler.swift */,
+				D221195E308DF4F700F7822F /* Info.plist */,
+			);
+			path = "TUfast Extension";
+			sourceTree = "<group>";
+		};
+		D2211968308DF4F700F7822F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2211969308DF4F700F7822F /* manifest.safari.json */,
+				D221196A308DF4F700F7822F /* background.js */,
+				D221196B308DF4F700F7822F /* manifest.firefox.json */,
+				D221196C308DF4F700F7822F /* manifest.chrome.json */,
+				D221196D308DF4F700F7822F /* main.css */,
+				D221196E308DF4F700F7822F /* styles */,
+				D221196F308DF4F700F7822F /* contentScripts */,
+				D2211970308DF4F700F7822F /* vite */,
+				D2211971308DF4F700F7822F /* manifest.json */,
+				D2211972308DF4F700F7822F /* freshContent */,
+				D2211973308DF4F700F7822F /* background.html */,
+				D2211974308DF4F700F7822F /* _locales */,
+				D2211975308DF4F700F7822F /* i18n */,
+				D2211976308DF4F700F7822F /* modules */,
+				D2211977308DF4F700F7822F /* assets */,
+			);
+			name = Resources;
+			path = "TUfast Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D221193B308DF4F500F7822F /* TUfast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2211965308DF4F700F7822F /* Build configuration list for PBXNativeTarget "TUfast" */;
+			buildPhases = (
+				D2211938308DF4F500F7822F /* Sources */,
+				D2211939308DF4F500F7822F /* Frameworks */,
+				D221193A308DF4F500F7822F /* Resources */,
+				D2211964308DF4F700F7822F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D221195A308DF4F700F7822F /* PBXTargetDependency */,
+			);
+			name = TUfast;
+			packageProductDependencies = (
+			);
+			productName = TUfast;
+			productReference = D221193C308DF4F500F7822F /* TUfast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2211956308DF4F700F7822F /* TUfast Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2211961308DF4F700F7822F /* Build configuration list for PBXNativeTarget "TUfast Extension" */;
+			buildPhases = (
+				D2211953308DF4F700F7822F /* Sources */,
+				D2211954308DF4F700F7822F /* Frameworks */,
+				D2211955308DF4F700F7822F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TUfast Extension";
+			packageProductDependencies = (
+			);
+			productName = "TUfast Extension";
+			productReference = D2211957308DF4F700F7822F /* TUfast Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2211934308DF4F500F7822F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					D221193B308DF4F500F7822F = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					D2211956308DF4F700F7822F = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = D2211937308DF4F500F7822F /* Build configuration list for PBXProject "TUfast" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2211933308DF4F500F7822F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D221193D308DF4F500F7822F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D221193B308DF4F500F7822F /* TUfast */,
+				D2211956308DF4F700F7822F /* TUfast Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D221193A308DF4F500F7822F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2211946308DF4F500F7822F /* Icon.png in Resources */,
+				D221194F308DF4F500F7822F /* Main.storyboard in Resources */,
+				D221194A308DF4F500F7822F /* Script.js in Resources */,
+				D2211944308DF4F500F7822F /* Main.html in Resources */,
+				D2211951308DF4F700F7822F /* Assets.xcassets in Resources */,
+				D2211948308DF4F500F7822F /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2211955308DF4F700F7822F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2211986308DF4F700F7822F /* assets in Resources */,
+				D221197A308DF4F700F7822F /* manifest.firefox.json in Resources */,
+				D2211982308DF4F700F7822F /* background.html in Resources */,
+				D2211984308DF4F700F7822F /* i18n in Resources */,
+				D221197C308DF4F700F7822F /* main.css in Resources */,
+				D2211979308DF4F700F7822F /* background.js in Resources */,
+				D2211981308DF4F700F7822F /* freshContent in Resources */,
+				D2211985308DF4F700F7822F /* modules in Resources */,
+				D2211978308DF4F700F7822F /* manifest.safari.json in Resources */,
+				D2211983308DF4F700F7822F /* _locales in Resources */,
+				D2211980308DF4F700F7822F /* manifest.json in Resources */,
+				D221197F308DF4F700F7822F /* vite in Resources */,
+				D221197D308DF4F700F7822F /* styles in Resources */,
+				D221197E308DF4F700F7822F /* contentScripts in Resources */,
+				D221197B308DF4F700F7822F /* manifest.chrome.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2211938308DF4F500F7822F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D221194C308DF4F500F7822F /* ViewController.swift in Sources */,
+				D2211940308DF4F500F7822F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2211953308DF4F700F7822F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D221195D308DF4F700F7822F /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D221195A308DF4F700F7822F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2211956308DF4F700F7822F /* TUfast Extension */;
+			targetProxy = D2211959308DF4F700F7822F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2211942308DF4F500F7822F /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2211943308DF4F500F7822F /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		D221194D308DF4F500F7822F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D221194E308DF4F500F7822F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D221195F308DF4F700F7822F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2211960308DF4F700F7822F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D2211962308DF4F700F7822F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TUfast Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TUfast Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.scottkoehler.TUfast.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D2211963308DF4F700F7822F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TUfast Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TUfast Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.scottkoehler.TUfast.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D2211966308DF4F700F7822F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TUfast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TUfast;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.scottkoehler.TUfast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D2211967308DF4F700F7822F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TUfast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TUfast;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.scottkoehler.TUfast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2211937308DF4F500F7822F /* Build configuration list for PBXProject "TUfast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D221195F308DF4F700F7822F /* Debug */,
+				D2211960308DF4F700F7822F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2211961308DF4F700F7822F /* Build configuration list for PBXNativeTarget "TUfast Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2211962308DF4F700F7822F /* Debug */,
+				D2211963308DF4F700F7822F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2211965308DF4F700F7822F /* Build configuration list for PBXNativeTarget "TUfast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2211966308DF4F700F7822F /* Debug */,
+				D2211967308DF4F700F7822F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2211934308DF4F500F7822F /* Project object */;
+}

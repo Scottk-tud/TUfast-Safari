@@ -24,6 +24,9 @@ async function getKeyBuffer() {
   // key differs between browsers, because different APIs
   if (isFirefox()) {
     sysInfo += window.navigator.hardwareConcurrency
+  } else if (!chrome.system?.cpu) {
+    // Safari has no chrome.system API
+    sysInfo += navigator.hardwareConcurrency
   } else {
     // chrome, edge and everything else
     const info: any = await chrome.system.cpu.getInfo()
