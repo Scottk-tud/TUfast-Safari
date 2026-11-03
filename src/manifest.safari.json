@@ -223,7 +223,25 @@
   "web_accessible_resources": [
     {
       "resources": ["assets/*", "contentScripts/other/notification.js"],
-      "matches": ["<all_urls>"]
+      "matches": [
+        "https://*.slub-dresden.de/*",
+        "https://*.tu-dresden.de/*",
+        "https://bildungsportal.sachsen.de/*",
+        "https://duckduckgo.com/*",
+        "https://git.imld.de/*",
+        "https://gitlab.hrz.tu-chemnitz.de/*",
+        "https://kagi.com/*",
+        "http://opal.de/*",
+        "https://opal.de/*",
+        "https://search.brave.com/*",
+        "https://videocampus.sachsen.de/*",
+        "https://www.bing.com/*",
+        "https://www.ecosia.org/*",
+        "https://www.google.com/*",
+        "https://www.google.de/*",
+        "https://www.qwant.com/*",
+        "https://www.startpage.com/*"
+      ]
     },
     {
       "resources": ["contentScripts/login/common.js"],
