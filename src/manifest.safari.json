@@ -5,7 +5,25 @@
   "description": "__MSG_extensionDescription__",
   "permissions": ["storage", "alarms"],
   "optional_permissions": ["tabs", "cookies", "declarativeNetRequestWithHostAccess"],
-  "host_permissions": ["*://*/"],
+  "host_permissions": [
+    "https://*.slub-dresden.de/*",
+    "https://*.tu-dresden.de/*",
+    "https://bildungsportal.sachsen.de/*",
+    "https://duckduckgo.com/*",
+    "https://git.imld.de/*",
+    "https://gitlab.hrz.tu-chemnitz.de/*",
+    "https://kagi.com/*",
+    "http://opal.de/*",
+    "https://opal.de/*",
+    "https://search.brave.com/*",
+    "https://videocampus.sachsen.de/*",
+    "https://www.bing.com/*",
+    "https://www.ecosia.org/*",
+    "https://www.google.com/*",
+    "https://www.google.de/*",
+    "https://www.qwant.com/*",
+    "https://www.startpage.com/*"
+  ],
   "background": {
     "page": "background.html",
     "persistent": false
